@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main{
+  @apply ml-10 font-marvel pt-2 text-2xl bg-red-600 text-white;
+}
+
+.btn{
+  @apply  px-5 py-3 my-3 mx-2 text-sm font-medium text-white  rounded
+}
+
+.btn-blue{
+  @apply bg-indigo-600 hover:bg-indigo-700;
+}
+
+.btn:focus{
+  @apply outline-none ring mx-2
+}
+
+.btn-red{
+  @apply border-2 hover:bg-white hover:text-black hover:font-bold ;
+}
+
+dd{
+  @apply text-3xl my-1 font-bold ml-4 italic;
+}
+
+h1{
+  @apply text-5xl ;
+}
+
+.list{
+  @apply list-item italic ml-2
+}
+
+.list:hover{
+  @apply underline
+}
+
+.text-danger{
+  @apply text-black font-black
+}
+
+h3{
+  @apply font-black
+}
+
