@@ -1,0 +1,11 @@
+<div class="dbzMain">
+  <h1>DBZ Personajes</h1>
+  <div class="grid grid-cols-2 row-auto">
+    <div class="col-auto">
+      <dbz-list [characterList]="characters" (onDelete)="onDeleteCharacter($event)"></dbz-list>
+    </div>
+    <div class="col-auto ml-2 ">
+      <dbz-add-character (addCharacter)="addCharacter($event)"></dbz-add-character>
+    </div>
+  </div>
+</div>
